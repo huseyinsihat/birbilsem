@@ -1,0 +1,597 @@
+{
+  "institution": {
+    "id": "inst_sincan",
+    "name": "Sincan BİLSEM",
+    "code": "SINCAN_BILSEM",
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  "academicYear": {
+    "id": "ay_2026",
+    "institutionId": "inst_sincan",
+    "label": "2026-2027",
+    "startDate": "2026-09-01",
+    "endDate": "2027-06-15",
+    "isActive": true,
+    "createdAt": "2026-01-01T00:00:00.000Z",
+    "updatedAt": "2026-01-01T00:00:00.000Z"
+  },
+  "schools": [
+    {
+      "id": "sch_1",
+      "institutionId": "inst_sincan",
+      "name": "Örnek Ortaokulu A",
+      "district": "Sincan",
+      "city": "Ankara",
+      "schoolType": "Ortaokul",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sch_2",
+      "institutionId": "inst_sincan",
+      "name": "Örnek Lisesi B",
+      "district": "Etimesgut",
+      "city": "Ankara",
+      "schoolType": "Lise",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "programs": [
+    {
+      "id": "prog_gy",
+      "institutionId": "inst_sincan",
+      "name": "Genel Yetenek",
+      "code": "GY",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "u_admin",
+      "institutionId": "inst_sincan",
+      "displayName": "Ayşe Yönetici",
+      "role": "INSTITUTION_ADMIN",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_t1",
+      "institutionId": "inst_sincan",
+      "displayName": "Mehmet Danışman",
+      "role": "TEACHER",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_t2",
+      "institutionId": "inst_sincan",
+      "displayName": "Zeynep Öğretmen",
+      "role": "TEACHER",
+      "status": "ACTIVE",
+      "permissionOverrides": ["announcement.create"],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_s1",
+      "institutionId": "inst_sincan",
+      "displayName": "Ali Öğrenci",
+      "role": "STUDENT",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_s2",
+      "institutionId": "inst_sincan",
+      "displayName": "Elif Öğrenci",
+      "role": "STUDENT",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_s3",
+      "institutionId": "inst_sincan",
+      "displayName": "Can Öğrenci",
+      "role": "STUDENT",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_s4",
+      "institutionId": "inst_sincan",
+      "displayName": "Deniz Öğrenci",
+      "role": "STUDENT",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_p1",
+      "institutionId": "inst_sincan",
+      "displayName": "Fatma Veli",
+      "role": "PARENT",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_p2",
+      "institutionId": "inst_sincan",
+      "displayName": "Hasan Veli",
+      "role": "PARENT",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "u_pending",
+      "institutionId": "inst_sincan",
+      "displayName": "Bekleyen Öğretmen",
+      "role": "TEACHER",
+      "status": "PENDING",
+      "permissionOverrides": [],
+      "createdAt": "2026-09-01T00:00:00.000Z",
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "t1",
+      "institutionId": "inst_sincan",
+      "userId": "u_t1",
+      "branch": "Bilişim Teknolojileri",
+      "title": "Öğretmen",
+      "status": "ACTIVE",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "t2",
+      "institutionId": "inst_sincan",
+      "userId": "u_t2",
+      "branch": "Türkçe",
+      "title": "Öğretmen",
+      "status": "ACTIVE",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "students": [
+    {
+      "id": "st1",
+      "institutionId": "inst_sincan",
+      "userId": "u_s1",
+      "firstName": "Ali",
+      "lastName": "Öğrenci",
+      "schoolNumber": "21001",
+      "status": "ACTIVE",
+      "bilsemField": "GENEL YETENEK",
+      "enrollmentDate": "2023-08-29",
+      "birthDate": "2016-03-02",
+      "gender": "Erkek",
+      "schoolId": "sch_1",
+      "grade": "5",
+      "className": "5-A",
+      "transportType": "VELI",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "st2",
+      "institutionId": "inst_sincan",
+      "userId": "u_s2",
+      "firstName": "Elif",
+      "lastName": "Öğrenci",
+      "schoolNumber": "21002",
+      "status": "ACTIVE",
+      "bilsemField": "GENEL YETENEK",
+      "enrollmentDate": "2023-08-17",
+      "birthDate": "2016-04-07",
+      "gender": "Kız",
+      "schoolId": "sch_1",
+      "grade": "5",
+      "className": "5-B",
+      "transportType": "SERVIS",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "st3",
+      "institutionId": "inst_sincan",
+      "userId": "u_s3",
+      "firstName": "Can",
+      "lastName": "Öğrenci",
+      "schoolNumber": "21003",
+      "status": "ACTIVE",
+      "bilsemField": "GENEL YETENEK",
+      "enrollmentDate": "2021-08-26",
+      "birthDate": "2013-05-02",
+      "gender": "Erkek",
+      "schoolId": "sch_1",
+      "grade": "8",
+      "className": "8-A",
+      "transportType": "TOPLU",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "st4",
+      "institutionId": "inst_sincan",
+      "userId": "u_s4",
+      "firstName": "Deniz",
+      "lastName": "Öğrenci",
+      "schoolNumber": "21004",
+      "status": "ACTIVE",
+      "bilsemField": "GENEL YETENEK",
+      "enrollmentDate": "2021-08-23",
+      "birthDate": "2013-05-28",
+      "gender": "Erkek",
+      "schoolId": "sch_2",
+      "grade": "8",
+      "className": "8-B",
+      "transportType": "VELI",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "parents": [
+    {
+      "id": "par1",
+      "institutionId": "inst_sincan",
+      "userId": "u_p1",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "par2",
+      "institutionId": "inst_sincan",
+      "userId": "u_p2",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "parentStudentRelations": [
+    {
+      "id": "psr1",
+      "institutionId": "inst_sincan",
+      "parentId": "par1",
+      "studentId": "st1",
+      "relation": "MOTHER",
+      "isPrimary": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "psr2",
+      "institutionId": "inst_sincan",
+      "parentId": "par1",
+      "studentId": "st2",
+      "relation": "MOTHER",
+      "isPrimary": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "psr3",
+      "institutionId": "inst_sincan",
+      "parentId": "par2",
+      "studentId": "st3",
+      "relation": "FATHER",
+      "isPrimary": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "psr4",
+      "institutionId": "inst_sincan",
+      "parentId": "par2",
+      "studentId": "st4",
+      "relation": "FATHER",
+      "isPrimary": true,
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "studentPrograms": [
+    {
+      "id": "sp1",
+      "institutionId": "inst_sincan",
+      "studentId": "st1",
+      "programId": "prog_gy",
+      "groupCode": "B1/25-A4",
+      "academicYearId": "ay_2026",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sp2",
+      "institutionId": "inst_sincan",
+      "studentId": "st2",
+      "programId": "prog_gy",
+      "groupCode": "B1/25-A4",
+      "academicYearId": "ay_2026",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sp3",
+      "institutionId": "inst_sincan",
+      "studentId": "st3",
+      "programId": "prog_gy",
+      "groupCode": "Ö2/3-BİL-A2",
+      "academicYearId": "ay_2026",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sp4",
+      "institutionId": "inst_sincan",
+      "studentId": "st4",
+      "programId": "prog_gy",
+      "groupCode": "Ö2/3-BİL-A2",
+      "academicYearId": "ay_2026",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "studentTeacherRelations": [
+    {
+      "id": "str1",
+      "institutionId": "inst_sincan",
+      "studentId": "st1",
+      "teacherId": "t2",
+      "type": "ADVISOR",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "str2",
+      "institutionId": "inst_sincan",
+      "studentId": "st2",
+      "teacherId": "t2",
+      "type": "ADVISOR",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "str3",
+      "institutionId": "inst_sincan",
+      "studentId": "st3",
+      "teacherId": "t1",
+      "type": "ADVISOR",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "str4",
+      "institutionId": "inst_sincan",
+      "studentId": "st4",
+      "teacherId": "t1",
+      "type": "ADVISOR",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "str5",
+      "institutionId": "inst_sincan",
+      "studentId": "st3",
+      "teacherId": "t1",
+      "type": "COURSE",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "str6",
+      "institutionId": "inst_sincan",
+      "studentId": "st4",
+      "teacherId": "t1",
+      "type": "COURSE",
+      "startDate": "2026-09-01",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "groups": [
+    {
+      "id": "g_teachers",
+      "institutionId": "inst_sincan",
+      "name": "Tüm Öğretmenler",
+      "type": "INSTITUTIONAL",
+      "description": "Kurumsal öğretmen grubu",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "g_bilisim",
+      "institutionId": "inst_sincan",
+      "name": "Bilişim Grubu",
+      "type": "COURSE",
+      "description": "8. sınıf bilişim ders grubu",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "g_5a",
+      "institutionId": "inst_sincan",
+      "name": "5. Sınıf Grubu",
+      "type": "STUDENT",
+      "description": "5. sınıf öğrencileri",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "g_robotik",
+      "institutionId": "inst_sincan",
+      "name": "Robotik Takımı",
+      "type": "PROJECT",
+      "description": "Proje grubu (V1 sohbet)",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    }
+  ],
+  "groupMemberships": [
+    {"id": "gm1", "institutionId": "inst_sincan", "userId": "u_admin", "groupId": "g_teachers", "roleInGroup": "ADMIN", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm2", "institutionId": "inst_sincan", "userId": "u_t1", "groupId": "g_teachers", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm3", "institutionId": "inst_sincan", "userId": "u_t2", "groupId": "g_teachers", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm4", "institutionId": "inst_sincan", "userId": "u_t1", "groupId": "g_bilisim", "roleInGroup": "ADMIN", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm5", "institutionId": "inst_sincan", "userId": "u_s3", "groupId": "g_bilisim", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm6", "institutionId": "inst_sincan", "userId": "u_s4", "groupId": "g_bilisim", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm7", "institutionId": "inst_sincan", "userId": "u_t2", "groupId": "g_5a", "roleInGroup": "ADMIN", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm8", "institutionId": "inst_sincan", "userId": "u_s1", "groupId": "g_5a", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm9", "institutionId": "inst_sincan", "userId": "u_s2", "groupId": "g_5a", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm10", "institutionId": "inst_sincan", "userId": "u_t1", "groupId": "g_robotik", "roleInGroup": "ADMIN", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm11", "institutionId": "inst_sincan", "userId": "u_s3", "groupId": "g_robotik", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "gm12", "institutionId": "inst_sincan", "userId": "u_p1", "groupId": "g_5a", "roleInGroup": "MEMBER", "startDate": "2026-09-01", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"}
+  ],
+  "courses": [
+    {"id": "c_bil", "institutionId": "inst_sincan", "name": "Bilişim Teknolojileri", "code": "BIL", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "c_tur", "institutionId": "inst_sincan", "name": "Türkçe", "code": "TUR", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"}
+  ],
+  "lessons": [
+    {"id": "les1", "institutionId": "inst_sincan", "courseId": "c_bil", "groupId": "g_bilisim", "teacherId": "t1", "title": "8. Sınıf Bilişim", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "les2", "institutionId": "inst_sincan", "courseId": "c_tur", "groupId": "g_5a", "teacherId": "t2", "title": "5. Sınıf Türkçe", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"}
+  ],
+  "schedules": [
+    {"id": "schd1", "institutionId": "inst_sincan", "lessonId": "les1", "weekday": 1, "startTime": "16:00", "endTime": "17:20", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd1b", "institutionId": "inst_sincan", "lessonId": "les1", "weekday": 2, "startTime": "16:00", "endTime": "17:20", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd1c", "institutionId": "inst_sincan", "lessonId": "les1", "weekday": 3, "startTime": "16:00", "endTime": "17:20", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd1d", "institutionId": "inst_sincan", "lessonId": "les1", "weekday": 4, "startTime": "16:00", "endTime": "17:20", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd1e", "institutionId": "inst_sincan", "lessonId": "les1", "weekday": 5, "startTime": "16:00", "endTime": "17:20", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd2", "institutionId": "inst_sincan", "lessonId": "les2", "weekday": 1, "startTime": "15:00", "endTime": "16:00", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd2b", "institutionId": "inst_sincan", "lessonId": "les2", "weekday": 2, "startTime": "15:00", "endTime": "16:00", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd2c", "institutionId": "inst_sincan", "lessonId": "les2", "weekday": 3, "startTime": "15:00", "endTime": "16:00", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd2d", "institutionId": "inst_sincan", "lessonId": "les2", "weekday": 4, "startTime": "15:00", "endTime": "16:00", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "schd2e", "institutionId": "inst_sincan", "lessonId": "les2", "weekday": 5, "startTime": "15:00", "endTime": "16:00", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"}
+  ],
+  "enrollments": [
+    {"id": "en1", "institutionId": "inst_sincan", "lessonId": "les1", "studentId": "st3", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "en2", "institutionId": "inst_sincan", "lessonId": "les1", "studentId": "st4", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "en3", "institutionId": "inst_sincan", "lessonId": "les2", "studentId": "st1", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "en4", "institutionId": "inst_sincan", "lessonId": "les2", "studentId": "st2", "academicYearId": "ay_2026", "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"}
+  ],
+  "conversations": [
+    {"id": "cv_admin", "institutionId": "inst_sincan", "type": "ANNOUNCEMENT_CHANNEL", "title": "İdare", "isInstitutionalPriority": true, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cv_bilisim", "institutionId": "inst_sincan", "type": "GROUP", "groupId": "g_bilisim", "title": "Bilişim Grubu", "isInstitutionalPriority": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cv_5a", "institutionId": "inst_sincan", "type": "GROUP", "groupId": "g_5a", "title": "5. Sınıf Grubu", "isInstitutionalPriority": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cv_robotik", "institutionId": "inst_sincan", "type": "GROUP", "groupId": "g_robotik", "title": "Robotik Takımı", "isInstitutionalPriority": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cv_dm1", "institutionId": "inst_sincan", "type": "DIRECT", "title": "Mehmet Danışman · Can Öğrenci", "isInstitutionalPriority": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cv_teachers", "institutionId": "inst_sincan", "type": "GROUP", "groupId": "g_teachers", "title": "Tüm Öğretmenler", "isInstitutionalPriority": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"}
+  ],
+  "conversationMembers": [
+    {"id": "cm1", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_admin", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm2", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_t1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm3", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_t2", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm4", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_s1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm5", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_s2", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm6", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_s3", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm7", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_s4", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm8", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_p1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm9", "institutionId": "inst_sincan", "conversationId": "cv_admin", "userId": "u_p2", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm10", "institutionId": "inst_sincan", "conversationId": "cv_bilisim", "userId": "u_t1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm11", "institutionId": "inst_sincan", "conversationId": "cv_bilisim", "userId": "u_s3", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm12", "institutionId": "inst_sincan", "conversationId": "cv_bilisim", "userId": "u_s4", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm13", "institutionId": "inst_sincan", "conversationId": "cv_5a", "userId": "u_t2", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm14", "institutionId": "inst_sincan", "conversationId": "cv_5a", "userId": "u_s1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm15", "institutionId": "inst_sincan", "conversationId": "cv_5a", "userId": "u_s2", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm16", "institutionId": "inst_sincan", "conversationId": "cv_5a", "userId": "u_p1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm17", "institutionId": "inst_sincan", "conversationId": "cv_robotik", "userId": "u_t1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm18", "institutionId": "inst_sincan", "conversationId": "cv_robotik", "userId": "u_s3", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm19", "institutionId": "inst_sincan", "conversationId": "cv_dm1", "userId": "u_t1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm20", "institutionId": "inst_sincan", "conversationId": "cv_dm1", "userId": "u_s3", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm21", "institutionId": "inst_sincan", "conversationId": "cv_teachers", "userId": "u_admin", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm22", "institutionId": "inst_sincan", "conversationId": "cv_teachers", "userId": "u_t1", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"},
+    {"id": "cm23", "institutionId": "inst_sincan", "conversationId": "cv_teachers", "userId": "u_t2", "muted": false, "createdAt": "2026-01-01T00:00:00.000Z", "updatedAt": "2026-01-01T00:00:00.000Z"}
+  ],
+  "messages": [
+    {"id": "m1", "institutionId": "inst_sincan", "conversationId": "cv_admin", "senderId": "u_admin", "body": "Yarın eğitim saatlerinde değişiklik yapılmıştır.", "attachmentLabels": [], "status": "READ", "isDeleted": false, "createdAt": "2026-09-09T08:00:00.000Z", "updatedAt": "2026-09-09T08:00:00.000Z"},
+    {"id": "m2", "institutionId": "inst_sincan", "conversationId": "cv_bilisim", "senderId": "u_t1", "body": "Yarın saat 16.00'da dersimiz vardır.", "attachmentLabels": [], "status": "DELIVERED", "isDeleted": false, "createdAt": "2026-09-09T14:00:00.000Z", "updatedAt": "2026-09-09T14:00:00.000Z"},
+    {"id": "m3", "institutionId": "inst_sincan", "conversationId": "cv_bilisim", "senderId": "u_s3", "body": "Tamam hocam.", "attachmentLabels": [], "status": "READ", "isDeleted": false, "createdAt": "2026-09-09T14:05:00.000Z", "updatedAt": "2026-09-09T14:05:00.000Z"},
+    {"id": "m4", "institutionId": "inst_sincan", "conversationId": "cv_dm1", "senderId": "u_t1", "body": "Proje dosyanı bu hafta yükleyebilirsin.", "attachmentLabels": [], "status": "DELIVERED", "isDeleted": false, "createdAt": "2026-09-09T16:00:00.000Z", "updatedAt": "2026-09-09T16:00:00.000Z"},
+    {"id": "m5", "institutionId": "inst_sincan", "conversationId": "cv_robotik", "senderId": "u_t1", "body": "Dosya yüklendi örneği", "attachmentLabels": ["plan.pdf"], "status": "SENT", "isDeleted": false, "createdAt": "2026-09-09T17:00:00.000Z", "updatedAt": "2026-09-09T17:00:00.000Z"},
+    {"id": "m6", "institutionId": "inst_sincan", "conversationId": "cv_teachers", "senderId": "u_admin", "body": "Bugünkü toplantı 14.00'te.", "attachmentLabels": [], "status": "READ", "isDeleted": false, "createdAt": "2026-09-09T09:00:00.000Z", "updatedAt": "2026-09-09T09:00:00.000Z"}
+  ],
+  "announcements": [
+    {
+      "id": "ann1",
+      "institutionId": "inst_sincan",
+      "title": "Eğitim saati değişikliği",
+      "body": "Yarın eğitim saatlerinde değişiklik yapılmıştır. Lütfen programı kontrol edin.",
+      "targetGroupIds": ["g_teachers", "g_bilisim", "g_5a"],
+      "priority": "URGENT",
+      "publishAt": "2026-09-09T08:00:00.000Z",
+      "notify": true,
+      "trackRead": true,
+      "allowComments": true,
+      "requireAck": false,
+      "createdBy": "u_admin",
+      "createdAt": "2026-09-09T08:00:00.000Z",
+      "updatedAt": "2026-09-09T08:00:00.000Z"
+    },
+    {
+      "id": "ann2",
+      "institutionId": "inst_sincan",
+      "title": "Kütüphane saatleri",
+      "body": "Kütüphane kullanım saatleri güncellenmiştir.",
+      "targetGroupIds": ["g_5a", "g_bilisim"],
+      "priority": "NORMAL",
+      "publishAt": "2026-09-08T10:00:00.000Z",
+      "notify": true,
+      "trackRead": true,
+      "allowComments": true,
+      "requireAck": false,
+      "createdBy": "u_admin",
+      "createdAt": "2026-09-08T10:00:00.000Z",
+      "updatedAt": "2026-09-08T10:00:00.000Z"
+    }
+  ],
+  "announcementReads": [
+    {"id": "ar1", "institutionId": "inst_sincan", "announcementId": "ann1", "userId": "u_t1", "deliveredAt": "2026-09-09T08:01:00.000Z", "readAt": "2026-09-09T08:10:00.000Z", "createdAt": "2026-09-09T08:01:00.000Z", "updatedAt": "2026-09-09T08:10:00.000Z"},
+    {"id": "ar2", "institutionId": "inst_sincan", "announcementId": "ann1", "userId": "u_t2", "deliveredAt": "2026-09-09T08:01:00.000Z", "readAt": "2026-09-09T09:00:00.000Z", "createdAt": "2026-09-09T08:01:00.000Z", "updatedAt": "2026-09-09T09:00:00.000Z"},
+    {"id": "ar3", "institutionId": "inst_sincan", "announcementId": "ann1", "userId": "u_s3", "deliveredAt": "2026-09-09T08:01:00.000Z", "createdAt": "2026-09-09T08:01:00.000Z", "updatedAt": "2026-09-09T08:01:00.000Z"},
+    {"id": "ar4", "institutionId": "inst_sincan", "announcementId": "ann1", "userId": "u_s1", "deliveredAt": "2026-09-09T08:01:00.000Z", "readAt": "2026-09-09T12:00:00.000Z", "createdAt": "2026-09-09T08:01:00.000Z", "updatedAt": "2026-09-09T12:00:00.000Z"},
+    {"id": "ar5", "institutionId": "inst_sincan", "announcementId": "ann2", "userId": "u_s1", "deliveredAt": "2026-09-08T10:01:00.000Z", "readAt": "2026-09-08T11:00:00.000Z", "createdAt": "2026-09-08T10:01:00.000Z", "updatedAt": "2026-09-08T11:00:00.000Z"},
+    {"id": "ar6", "institutionId": "inst_sincan", "announcementId": "ann2", "userId": "u_p1", "deliveredAt": "2026-09-08T10:01:00.000Z", "createdAt": "2026-09-08T10:01:00.000Z", "updatedAt": "2026-09-08T10:01:00.000Z"}
+  ],
+  "comments": [
+    {"id": "cmt1", "institutionId": "inst_sincan", "targetType": "ANNOUNCEMENT", "targetId": "ann1", "authorId": "u_t1", "body": "Program güncellendi, teşekkürler.", "createdAt": "2026-09-09T09:30:00.000Z", "updatedAt": "2026-09-09T09:30:00.000Z"},
+    {"id": "cmt2", "institutionId": "inst_sincan", "targetType": "ANNOUNCEMENT", "targetId": "ann1", "authorId": "u_admin", "body": "Rica ederiz, bildirimleri takip edin.", "createdAt": "2026-09-09T09:45:00.000Z", "updatedAt": "2026-09-09T09:45:00.000Z"}
+  ],
+  "attendance": [
+    {"id": "att1", "institutionId": "inst_sincan", "studentId": "st3", "lessonId": "les1", "date": "2026-09-09", "status": "PRESENT", "recordedBy": "u_t1", "createdAt": "2026-09-09T17:20:00.000Z", "updatedAt": "2026-09-09T17:20:00.000Z"},
+    {"id": "att2", "institutionId": "inst_sincan", "studentId": "st4", "lessonId": "les1", "date": "2026-09-09", "status": "ABSENT", "recordedBy": "u_t1", "note": "Bildirim yok", "createdAt": "2026-09-09T17:20:00.000Z", "updatedAt": "2026-09-09T17:20:00.000Z"}
+  ],
+  "notifications": [
+    {"id": "n1", "institutionId": "inst_sincan", "userId": "u_s3", "type": "ANNOUNCEMENT", "title": "Yeni duyuru", "body": "Eğitim saati değişikliği", "relatedId": "ann1", "createdAt": "2026-09-09T08:01:00.000Z", "updatedAt": "2026-09-09T08:01:00.000Z"},
+    {"id": "n2", "institutionId": "inst_sincan", "userId": "u_p2", "type": "ATTENDANCE", "title": "Katılım", "body": "Deniz Öğrenci 16.00 dersine katılmadı.", "relatedId": "att2", "createdAt": "2026-09-09T17:21:00.000Z", "updatedAt": "2026-09-09T17:21:00.000Z"},
+    {"id": "n3", "institutionId": "inst_sincan", "userId": "u_t1", "type": "GROUP_MESSAGE", "title": "Bilişim Grubu", "body": "Yeni mesaj", "relatedId": "cv_bilisim", "createdAt": "2026-09-09T14:05:00.000Z", "updatedAt": "2026-09-09T14:05:00.000Z"}
+  ],
+  "auditLogs": [
+    {"id": "aud1", "institutionId": "inst_sincan", "actorId": "u_t1", "action": "attendance.create", "entityType": "attendance", "entityId": "att2", "newValue": "ABSENT", "at": "2026-09-09T17:20:00.000Z", "createdAt": "2026-09-09T17:20:00.000Z", "updatedAt": "2026-09-09T17:20:00.000Z"},
+    {"id": "aud2", "institutionId": "inst_sincan", "actorId": "u_admin", "action": "announcement.publish", "entityType": "announcement", "entityId": "ann1", "newValue": "URGENT", "at": "2026-09-09T08:00:00.000Z", "createdAt": "2026-09-09T08:00:00.000Z", "updatedAt": "2026-09-09T08:00:00.000Z"}
+  ]
+}
