@@ -3,6 +3,7 @@
     "id": "inst_sincan",
     "name": "Sincan BİLSEM",
     "code": "SINCAN_BILSEM",
+    "active": true,
     "createdAt": "2026-01-01T00:00:00.000Z",
     "updatedAt": "2026-01-01T00:00:00.000Z"
   },
@@ -40,6 +41,46 @@
   ],
   "programs": [
     {
+      "id": "prog_uyum",
+      "institutionId": "inst_sincan",
+      "name": "Uyum",
+      "code": "UYUM",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "prog_destek",
+      "institutionId": "inst_sincan",
+      "name": "Destek Eğitimi",
+      "code": "DESTEK",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "prog_byf",
+      "institutionId": "inst_sincan",
+      "name": "BYF",
+      "code": "BYF",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "prog_oyg",
+      "institutionId": "inst_sincan",
+      "name": "ÖYG",
+      "code": "OYG",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "prog_proje",
+      "institutionId": "inst_sincan",
+      "name": "Proje",
+      "code": "PROJE",
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
+    {
       "id": "prog_gy",
       "institutionId": "inst_sincan",
       "name": "Genel Yetenek",
@@ -49,6 +90,16 @@
     }
   ],
   "users": [
+    {
+      "id": "u_sys",
+      "institutionId": "inst_sincan",
+      "displayName": "Sistem Yöneticisi",
+      "role": "SYSTEM_ADMIN",
+      "status": "ACTIVE",
+      "permissionOverrides": [],
+      "createdAt": "2026-01-01T00:00:00.000Z",
+      "updatedAt": "2026-01-01T00:00:00.000Z"
+    },
     {
       "id": "u_admin",
       "institutionId": "inst_sincan",
